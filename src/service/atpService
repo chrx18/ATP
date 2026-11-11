@@ -1,0 +1,11 @@
+export const obtenerSingles = async () => {
+    const response = await fetch('http://www.ies-azarquiel.es/paco/apiatp/singles');
+    const data = await response.json();
+    return data.singles;
+};
+
+export const obtenerDoubles = async () => {
+    const response = await fetch('http://www.ies-azarquiel.es/paco/apiatp/doubles');
+    const data = await response.json();
+    return data.doubles;
+};
